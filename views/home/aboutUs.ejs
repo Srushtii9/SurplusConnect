@@ -1,8 +1,255 @@
-<h1 class="m-4 color-theme">About us</h1>
+<!-- <h1 class="m-4 color-theme">About us</h1>
 	
 <div class="bg-white m-4 p-4 shadow">
 	<ul class="fs-5">
 		<li>We, at Food Aid, provides food to poor people across the country.</li>
 		<li>Our main aim is to eliminate the hunger and satisfy the food needs of needy people by providing them from our donors.</li>
 	</ul>
-</div>
+</div> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     -->
+     <title>About Us - SurplusConnect </title>
+     <title><%= title %></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .color-theme {
+            color: #198754;
+        }
+        
+        .mission-card {
+            border-left: 4px solid #198754;
+            transition: transform 0.3s ease;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #19875420;
+            color: #198754;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+        
+        .milestone-section {
+            background: linear-gradient(rgba(25,135,84,0.9), rgba(25,135,84,0.9)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .footer {
+            background-color: #1a2e22;
+            color: #ffffff;
+            padding: 40px 0;
+            width: 100%;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .footer-section {
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #4caf50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #4caf50;
+        }
+        
+        .mission-box {
+            background-color: rgba(76, 175, 80, 0.1);
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+            margin-top: 10px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            color: #f5f5f5;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 36px;
+            height: 36px;
+            border-radius: 50%; */
+            /* background-color: #2c4a3b; */
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            /* background-color: #4caf50; */
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 20px;
+            border-top: 1px solid #2c4a3b;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #88d18b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: #4caf50;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Header Section -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <h1 class="m-4 color-theme">About Us</h1>
+                <div class="bg-white m-4 p-4 shadow">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p class="fs-5 mb-4">
+                                At SurplusConnect, we bridge the gap between surplus resources and those in need. Our platform serves as a vital link connecting generous donors with dedicated NGOs across the country, ensuring that excess food and resources reach those who need them most.
+                            </p>
+                            <ul class="fs-5">
+                                <li>We facilitate the efficient distribution of surplus food to underprivileged communities nationwide.</li>
+                                <li>Our mission is to eliminate hunger by creating a seamless connection between donors and NGOs, ensuring no resource goes to waste.</li>
+                                <li>Through technology and partnership, we're building a more sustainable and equitable food distribution system.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/assets/images/img-1.jpg" alt="About SurplusConnect" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission and Vision -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-white p-4 shadow mission-card h-100">
+                        <h3 class="color-theme mb-4">Our Mission</h3>
+                        <p class="fs-5">To create an efficient and sustainable ecosystem where surplus food reaches those in need, reducing waste and hunger simultaneously through technology-driven solutions and community partnerships.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-4 shadow mission-card h-100">
+                        <h3 class="color-theme mb-4">Our Vision</h3>
+                        <p class="fs-5">A world where no one goes hungry, where surplus food is efficiently redistributed, and where technology bridges the gap between abundance and scarcity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- Call to Action -->
+        <div class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="color-theme mb-4">Join Our Mission</h2>
+                <p class="fs-5 mb-4">Together, we can make a difference in reducing food waste and hunger.</p>
+                <button class="btn btn-success btn-lg"> <a  class="nav-link" href="/auth/signup">Get Involved</a> </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <i class="fa fa-map-marker"></i>  A/401, Court Chamber, Vile Parle - 400056
+                </div>
+                <div class="contact-info">
+                    <i class="fa fa-phone"></i> +91 8762246489
+                </div>
+                <div class="contact-info">
+                    <i class="fa fa-envelope"></i> <a href="mailto:support@surplusconnect.com">support@surplusconnect.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <div class="mission-box">
+                    <p>At Surplus Connect, we're committed to reducing waste by connecting surplus resources with those who need them most. Together, we build sustainable communities and a greener future.</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media for updates, tips, and success stories from our community.</p>
+                <div class="social-links">
+                    <a href="#"> Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-container footer-bottom">
+            <p>&copy; 2025 Surplus Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

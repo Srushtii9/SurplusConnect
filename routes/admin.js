@@ -100,7 +100,7 @@ router.get("/admin/donation/assign/:donationId", middleware.ensureAdminLoggedIn,
 		const donationId = req.params.donationId;
 		const agents = await User.find({ role: "agent" });
 		const donation = await Donation.findById(donationId).populate("donor");
-		res.render("admin/assignAgent", { title: "Assign agent", donation, agents });
+		res.render("admin/assignAgent", { title: "Assign NGO", donation, agents });
 	}
 	catch(err)
 	{
@@ -116,7 +116,7 @@ router.post("/admin/donation/assign/:donationId", middleware.ensureAdminLoggedIn
 		const donationId = req.params.donationId;
 		const {agent, adminToAgentMsg} = req.body;
 		await Donation.findByIdAndUpdate(donationId, { status: "assigned", agent, adminToAgentMsg });
-		req.flash("success", "Agent assigned successfully");
+		req.flash("success", "NGO assigned successfully");
 		res.redirect(`/admin/donation/view/${donationId}`);
 	}
 	catch(err)

@@ -1,5 +1,348 @@
-<h1 class="m-4 color-theme">Our Mission</h1>
+<!-- <h1 class="m-4 color-theme">Our Mission</h1>
 	
 <div class="bg-white m-4 p-4 shadow">
 		<h4>Our mission is to feed all the needy people and no one feels that he is going to sleep hungry today.</h4>
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - SurplusConnect</title>
+    <title><%= title %></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .color-theme {
+            color: #198754;
+        }
+        
+        .mission-highlight {
+            border-left: 4px solid #198754;
+            background-color: #19875410;
+        }
+        
+        .goal-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .goal-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .impact-section {
+            background: linear-gradient(rgba(25,135,84,0.9), rgba(25,135,84,0.9)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .strategy-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #19875420;
+            color: #198754;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        
+    .footer {
+        background-color: #1a2e22;
+        color: #ffffff;
+        padding: 40px 0;
+        width: 100%;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    .footer-section h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #4caf50;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .contact-info {
+        margin-bottom: 10px;
+    }
+    
+    .contact-info i {
+        margin-right: 10px;
+        color: #4caf50;
+    }
+    
+    .mission-box {
+        background-color: rgba(76, 175, 80, 0.1);
+        border-left: 4px solid #4caf50;
+        padding: 15px;
+        border-radius: 0 4px 4px 0;
+        margin-top: 10px;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        color: #f5f5f5;
+    }
+    
+    .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 36px;
+        height: 36px;
+        border-radius: 50%; */
+        /* background-color: #2c4a3b; */
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+        /* background-color: #4caf50; */
+        transform: translateY(-3px);
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 20px;
+        border-top: 1px solid #2c4a3b;
+        font-size: 14px;
+    }
+    
+    .footer a {
+        color: #88d18b;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #4caf50;
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Main Mission Section -->
+        <div class="container">
+            <h1 class="m-4 color-theme">Our Mission</h1>
+            
+            <div class="bg-white m-4 p-4 shadow">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h4 class="mb-4">Our mission is to feed all the needy people and no one feels that they are going to sleep hungry today.</h4>
+                        <div class="mission-highlight p-4 mt-4">
+                            <p class="fs-5 mb-0">We strive to create a world where surplus food finds its way to hungry stomachs, where technology bridges the gap between excess and need, and where communities come together to ensure no one goes to bed hungry.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="/api/placeholder/400/300" alt="Our Mission" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Goals Section -->
+        <div class="container py-5">
+            <h2 class="color-theme text-center mb-5">Our Key Goals</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card goal-card shadow h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="strategy-icon mx-auto">
+                                <i>🎯</i>
+                            </div>
+                            <h4 class="color-theme">Zero Hunger</h4>
+                            <p>Ensure that every individual has access to nutritious meals, regardless of their economic situation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card goal-card shadow h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="strategy-icon mx-auto">
+                                <i>🔄</i>
+                            </div>
+                            <h4 class="color-theme">Reduce Waste</h4>
+                            <p>Minimize food waste by efficiently redistributing surplus food from donors to those in need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card goal-card shadow h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="strategy-icon mx-auto">
+                                <i>🤝</i>
+                            </div>
+                            <h4 class="color-theme">Build Community</h4>
+                            <p>Foster a network of donors, NGOs, and volunteers working together to combat hunger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="impact-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Impact</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="display-4 fw-bold">100K+</h3>
+                            <p>Meals Served Monthly</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="display-4 fw-bold">50+</h3>
+                            <p>Partner NGOs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="display-4 fw-bold">200+</h3>
+                            <p>Regular Donors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="display-4 fw-bold">15</h3>
+                            <p>Cities Covered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Strategy -->
+        <div class="container py-5">
+            <h2 class="color-theme text-center mb-5">How We Achieve Our Mission</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="strategy-icon mx-auto">
+                            <i>📱</i>
+                        </div>
+                        <h4 class="color-theme">Technology Platform</h4>
+                        <p>Connecting donors and NGOs through our easy-to-use digital platform</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="strategy-icon mx-auto">
+                            <i>🚚</i>
+                        </div>
+                        <h4 class="color-theme">Efficient Distribution</h4>
+                        <p>Optimized logistics network for quick food collection and delivery</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="strategy-icon mx-auto">
+                            <i>✔️</i>
+                        </div>
+                        <h4 class="color-theme">Quality Assurance</h4>
+                        <p>Strict food safety and quality standards for all donations</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="strategy-icon mx-auto">
+                            <i>👥</i>
+                        </div>
+                        <h4 class="color-theme">Community Engagement</h4>
+                        <p>Active volunteer network and community participation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="color-theme mb-4">Help Us Achieve Our Mission</h2>
+                <p class="fs-5 mb-4">Your support can help us ensure no one goes to bed hungry. Join us in making a difference.</p>
+                <!-- <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-success btn-lg">Donate Now</button>
+                    <button class="btn btn-outline-success btn-lg">Become a Volunteer</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Your page content goes here -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <i class="fa fa-map-marker"></i> A/401, Court Chamber, Vile Parle - 400056
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-phone"></i> +91 8762246489
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-envelope"></i> <a href="mailto:support@surplusconnect.com">support@surplusconnect.com</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Our Mission</h3>
+            <div class="mission-box">
+                <p>At Surplus Connect, we're committed to reducing waste by connecting surplus resources with those who need them most. Together, we build sustainable communities and a greener future.</p>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <p>Follow us on social media for updates, tips, and success stories from our community.</p>
+            <div class="social-links">
+                <a href="#"> Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container footer-bottom">
+        <p>&copy; 2025 Surplus Connect. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
